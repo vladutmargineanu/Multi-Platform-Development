@@ -17,7 +17,7 @@ Dezvoltarea trebuie făcută exclusiv pe mașinile virtuale SO.
 
 Nu rulați testele “local” (pe calculatoarele voastre sau în mașinile voastre virtuale). Veți avea diferențe față de vmchecker, iar echipa de SO nu va depana testele care merg “local”, dar pe vmchecker nu merg. Pe vmchecker sunt aceleași mașinile virtuale ca cele de pe wiki.
 Este încurajat ca lucrul la tema să se desfășoare folosind git. Indicați în README link-ul către repository dacă ați folosit git. Asigurați-vă că responsabilii de teme au drepturi de citire asupra repo-ului vostru.
-Ca să vă creați un repo de gitlab în instanța facultății: în repository-ul so-assignments de pe Github se află un script Bash care vă ajută să vă creați un repository privat pe instanța de Gitlab a facultății, unde aveți la dispoziție 5 repository-uri private utile pentru teme. Urmăriți indicațiile din README și de pe wiki-ul SO.
+Ca să vă creați un repo de gitlab în instanța facultății: în repository-ul so-assignments de pe Github se află un script Bash care vă ajută să vă creați un repository privat pe instanța de Gitlab a facultății, unde aveți la dispoziție 5 repository-uri private utile pentru teme. Urmăriți indicațiile din README și de pe wiki-ul SO. 
 
 Motivul pentru care încurajăm acest lucru este că responsabilii de teme se pot uita mai rapid pe Gitlab la temele voastre pentru a vă ajuta în cazul în care întâmpinați probleme/bug-uri. Este mai ușor să primiți suport în rezolvarea problemelor implementării voastre dacă le oferiți responsabililor de teme acces la codul sursă pe Gitlab.
 
