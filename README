@@ -1,0 +1,52 @@
+Nume: Margineanu Nicolae-Vladut
+Grupă: 333CA
+
+	Tema 1 Multi-platform Development
+
+Organizare:
+
+  1. Structura de date: am implementat un HashTable cu liste simplu inlantuite
+ cu scopul memorarii directivelor simbol-valoare.
+ HashTable-ul este alocat dinamic. Acesta se redimensioneaza daca:
+ (ht->countElements >= ht->size * 3 / 4). 
+
+  2. Pentru rezolvarea cerintei, am parsat linia primita in linia de comanda,
+ tratand fiecare caz in parte cu functia --static void parseLine(int numberArgv,
+ char **copyLine)--, astfel:
+ - argumentul -D, caz in care salvez in HashTable cheia si valoare directivei
+  respective.
+ - argumentul -I, caz in care salvez intr-un vector de string-uri fiecare director 
+ primit.
+ - argumentul -o, caz in care salvez fisierul de output.
+ Pentru cazurile de mai sus, am analizat fiecare situatie in care argumentele nu
+ erau despartite de spatiu.
+ La sfarsitul if-urilo imbricate, am analizat situatia in care avem doar un fisier
+ de input si nu avem fisier de output: if(findInFile == 1 && findOutFile == 0).
+ Analog pentru cazul in care avem mai multi parametri, am apelat functia
+ DIE din utils.h.
+
+  3. Am tratat cazul directivei define. Am citi linie cu linie din fisierul de
+ input/stdin si cautam cu functia strstr directiva respectiva. Salvam cheia si
+ valoarea in HashTable, dupa cerinta. 
+
+  4. Am apelat functia defineProcesor care trateaza cazul define. Am citit linie
+ cu linie din fisierul de input si am cimpartit in tokeni. Fiecare token a fost
+ cautat in HashTable pentru ilcouirea sombolului cu valoarea necesara.
+
+  5. In finalul executiei, am inchis fisierele folosite si am dezalocat memoria
+ alocata dinamic, respectiv HashMapul (cu functia freeHashTable()).
+
+Optional:
+
+Nu am reusit sa termin tot programul, intampinand probleme pe parcurs.
+- memory-leakuri
+-funcii POSIX care nu sunt valabile pe platforma
+Windows 
+Am rezolvat doar task-urile de complexitate usoara-medie.
+
+Bibliografie:
+stack-overflow: functii de prelucrare pe siruri de caractere
+bootlin: [https://elixir.bootlin.com/linux/latest/source/tools/lib/bpf/hashmap.c]
+model de hashmap.
+
+
